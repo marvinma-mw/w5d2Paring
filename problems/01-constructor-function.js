@@ -41,6 +41,37 @@ console.log(message2);
 
 ***********************************************************************/
 
+function SMS(recipient, sender, text) {
+
+        this.recipient = recipient;
+        this.sender = sender;
+        this.text = text;
+
+      }
+      
+      //sms.prototype.whatever method
+
+const message1 = new SMS('555-111-1111', '555-222-2222', 'Test message one');
+console.log(message1);
+
+// Should print...
+
+// SMS {
+//   recipient: '555-111-1111',
+//   sender: '555-222-2222',
+//   text: 'Test message one'
+// }
+
+const message2 = new SMS('555-333-3333', '555-444-4444', 'Test message two');
+console.log(message2);
+
+// Should print...
+
+// SMS {
+//   recipient: '555-333-3333',
+//   sender: '555-444-4444',
+//   text: 'Test message two'
+// }
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
