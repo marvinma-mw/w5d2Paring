@@ -23,7 +23,7 @@ Node.js with the examples below. Use the command:
 
 Examples:
 
-const message1 = new Email('sally@smith.com', 'john@smith.com', 
+const message1 = new Email('sally@smith.com', 'john@smith.com',
   'Test Message One', 'This is a test message.');
 console.log(message1);
 
@@ -36,7 +36,7 @@ console.log(message1);
 //   subject: 'Test Message One'
 // }
 
-const message2 = new Email('sally@smith.com', 'john@smith.com', 
+const message2 = new Email('sally@smith.com', 'john@smith.com',
   'Test Message Two', 'This is a test message.');
 console.log(message2);
 

@@ -58,14 +58,12 @@ console.log(message2.getSubjectAndText());
 
 
 
-class Email {
-  constructor(recipient, sender, subject, text) {
+function Email(recipient, sender, subject, text){
+
     this.recipient = recipient;
     this.sender = sender;
     this.subject = subject;
     this.text = text;
-  }
-
 }
 
 //this is our method
