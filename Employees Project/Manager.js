@@ -11,8 +11,18 @@ class Manager extends Employee{
         return
     }
 
-    totalSubSalary(){
-
-    }
+    totalSubsalary() {
+		let totalSubsalary = 0;
+​
+    this.employees.forEach((employee) => {
+      if (employee instanceof Manager) {
+        totalSubsalary += employee.salary + employee.totalSubsalary();
+      } else {
+        totalSubsalary += employee.salary;
+      }
+    });
+​
+    return totalSubsalary;
+  }
 
 }
