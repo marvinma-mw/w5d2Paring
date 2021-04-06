@@ -59,7 +59,32 @@ class Message {
   }
 }
 
-class Email {}
+class Email extends Message {
+  constructor(recipient, sender, subject, text) { //will not dictate the order
+    super(recipient, sender, text)  //dictates the order
+    this.subject = subject;
+  }
+}
+
+// Email {
+//   recipient: 'sally@smith.com',
+//   sender: 'john@smith.com',
+//   text: 'This is a test message.',
+//   subject: 'Test Message One'
+// }
+
+const message2 = new Email('sally@smith.com', 'john@smith.com',
+  'Test Message Two', 'This is a test message.');
+console.log(message2);
+
+// Should print...
+
+// Email {
+//   recipient: 'sally@smith.com',
+//   sender: 'john@smith.com',
+//   text: 'This is a test message.',
+//   subject: 'Test Message Two'
+// }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
