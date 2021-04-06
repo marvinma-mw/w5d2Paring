@@ -11,8 +11,8 @@ class Employee{
     }
 }
 
-module.export.Employee
+exports.Employee=Employee
 
-//  module.export={
+//  module.exports={
 //     Employee:Employee
 // }
